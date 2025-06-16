@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dom Manipulation</h1>
+    <p>Entire webage controlled by javascript</p>
+
+    <div class="lab-section">
+        <h2>Lab 1: Dynamic Element Creation</h2>
+        <div class="demo-box" id="element-playground">
+            <p id="playgroundP">Element will be created here dynamically!</p>
+        </div>
+        <div>
+            <select id="elementType">
+                <option value="div">Div Element</option>
+                <option value="p">Paragraph</option>
+                <option value="h1">Heading</option>
+                <option value="button">Button</option>
+                <option value="img">Image</option>
+            </select>
+            <input type="text" id="elementContent" placeholder="Element Content">
+            <button onclick="createCustomElement()">Create Element</button>
+            <button onclick="clearPlayground()">Clear All</button>
+
+        </div>
+    </div>
+    <div class="lab-section">
+        <h2>Lab 2: List Manipulation</h2>
+        <div class="demo-box">
+            <h3>State List</h3>
+            <ul id="state-list">
+                <li>Maharashtra</li>
+                <li>Tamil Nadu</li>
+                <li>Karnataka</li>
+                <li>Delhi</li>
+            </ul>
+        </div>
+        <input type="text" id="newState" placeholder="Enter State Name">
+        <button onclick="addState()">Add State</button>
+        <button onclick="removeLastState()">Remove Last</button>
+        <button onclick="sortState()">Sort A-Z</button>
+        <button onclick="highlightStates()">Highlight All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

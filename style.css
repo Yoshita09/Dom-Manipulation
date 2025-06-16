@@ -1,0 +1,86 @@
+body{
+    font-family: 'Segoe UI',sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #3b58da ;
+    color: white;
+    min-height: 100vh;
+
+}
+.lab-section{
+    background: rgba(255,255,255,.1);
+    padding: 25px;
+    box-shadow: 0  0 10px #092abe;
+    border-radius: 15px;
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+
+}
+.demo-box{
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 2px dashed rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.demo-box:hover {
+    border-color: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.3);
+}
+
+button{
+    background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+}
+input, select, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.new-element {
+    background-color: rgba(255, 255, 255, 0.219);
+    padding: 15px;
+    margin: 8px;
+    border-radius: 10px;
+}
+#state-list li {
+    background: rgba(255, 255, 255, 0);
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 3px;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
