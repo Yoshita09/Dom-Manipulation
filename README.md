@@ -39,7 +39,7 @@ Dom-Manipulation/
 
 ---
 
-## 👩‍💻 Developed by
+## 👩‍💻 Made by
 
 **Yoshita Singhal**
 
